@@ -700,18 +700,18 @@ public class Mp3PlayerGui extends javax.swing.JFrame implements BasicPlayerListe
        }
     }
 
-    @Override
-    public void stateUpdated(BasicPlayerEvent bpe) {
-       int state = bpe.getCode();
-       
-       if(state == BasicPlayerEvent.PLAYING){
-           movingFromJump = false;
-       }esle if (state == BasicPlayerEvent.SEEKING){
-           movingFromJump = true; 
-       }else if (state == BasicPlayerEvent.EOM){
-           System.out.println(""); /// Доделать что бы при конце песни воспр.следуйщая
-       }
-    }
+//    @Override
+//    public void stateUpdated(BasicPlayerEvent bpe) {
+//       int state = bpe.getCode();
+//       
+//       if(state == BasicPlayerEvent.PLAYING){
+//           movingFromJump = false;
+//       }esle if (BasicPlayerEvent.SEEKING == state){
+//           movingFromJump = true; 
+//       }else if (state == BasicPlayerEvent.EOM){
+//           System.out.println(""); /// Доделать что бы при конце песни воспр.следуйщая
+//       }
+//    }
 
     @Override
     public void setController(BasicController bc) {
